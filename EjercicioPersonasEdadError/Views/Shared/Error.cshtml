@@ -1,0 +1,16 @@
+﻿@using EjercicioPersonasEdadError.Models
+@model HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+}
+
+<h2>Error</h2>
+
+@if (@Model.Exception is MiExcepcion)
+{
+    @Model.Exception.Message
+}
+else
+{
+    @Html.Raw("Error desconocido")
+}

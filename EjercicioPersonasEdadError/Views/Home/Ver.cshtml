@@ -1,0 +1,11 @@
+﻿@using EjercicioPersonasEdadError.Models
+
+@{
+    ViewBag.Title = "Ver";
+    var p = (Persona) Session["persona"];
+}
+
+<h2>Ver</h2>
+
+<h3>@p.Nombre </h3>
+<h3>@p.Edad</h3>
